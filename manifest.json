@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+
+    "name": "andelaPortals",
+    "description": "Extension for quick naviagation of andela resources.",
+    "version": "1.0.0",
+    "browser_action": {
+        "default_popup": "portal.html"
+      },
+    "permissions": ["activeTab"]
+  }
