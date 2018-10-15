@@ -6,7 +6,8 @@
     "version": "1.0.0",
     "icons": { "128": "images/128-andela-logo.png" },
     "browser_action": {
-        "default_popup": "portal.html"
+      "default_icon": "images/gst19-andela-logo.png",
+      "default_popup": "portal.html"
       },
     "permissions": ["activeTab"]
   }

@@ -21,7 +21,6 @@ a:visited {
     grid-gap: 10px 10px;
     grid-template-columns: 2fr 2fr 2fr 2fr;
     justify-content: center;
-    justify-content: space-around;
     padding: 10px 22px;
 }
 
