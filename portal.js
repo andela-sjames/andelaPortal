@@ -21,7 +21,6 @@
             document.body.classList.add("night");
             document.getElementById("toggle").checked = true;
         } else {
-            console.log("I should be false");
             document.body.classList.remove('night');
         }
     }
