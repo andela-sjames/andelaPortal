@@ -26,7 +26,7 @@ a:visited {
 }
 
 .logo {
-    padding: 16px;
+    padding: 16px 0;
 }
 
 .logo-icon {
@@ -95,9 +95,10 @@ img {
     align-items: center;
     border-bottom: 0.5px solid #dadada;
     display: flex;
+    justify-content: space-around;
 }
 
 .version {
-    color: #444;
+    color: #2f5876;
     font-size: 18px;
 }
