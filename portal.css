@@ -1,11 +1,13 @@
-html
+* {
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-family: 'Exo', 'Open Sans', sans-serif;
+    font-size: 12px;
     margin: 0;
     min-height: 180px;
-    padding: 0;
+    padding: 0.5rem;
     width: 384px;
 }
 
@@ -18,25 +20,25 @@ a:visited {
 
 .grid-container {
     display: grid;
-    grid-gap: 10px 10px;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    justify-content: center;
-    padding: 10px 22px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 23%);
+    margin: 10px;
 }
 
 .logo {
-    padding: 16px;
+    padding: 16px 0;
 }
 
 .logo-icon {
     vertical-align: text-bottom;
-    margin-right: 12px;
+    height: 40px;
+    width: 40px;
 }
 
 h1 {
-    font-family: 'Menlo', monospace;
+    /* font-family: 'Menlo', monospace; */
     font-size: 22px;
-    font-weight: 400;
+    font-weight: bold;
     margin: 0;
     color: #2f5876;
 }
@@ -47,16 +49,27 @@ img {
 
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
     transition: 0.3s;
     padding: 2px 16px;
-    border-radius: 5px;
+    border-radius: 3px;
     color: #2f5876;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #F8F8F8;
+    font-weight: bold;
+    transition: font-weight .3s ease, font-size .5s ease;
+    font-size: 14px;
 }
 
 .divider {
@@ -69,6 +82,7 @@ img {
 
 .modal-content {
     padding: 0 22px;
+    font-size: 1rem;
 }
 
 .modal-icons {
@@ -80,9 +94,11 @@ img {
 .modal-header {
     align-items: center;
     border-bottom: 0.5px solid #dadada;
+    display: flex;
+    justify-content: space-around;
 }
 
 .version {
-    color: #444;
+    color: #2f5876;
     font-size: 18px;
 }
