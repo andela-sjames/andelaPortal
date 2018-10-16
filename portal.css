@@ -29,11 +29,12 @@ body.night a:link {
 }
 
 body.night .card:hover { 
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(47,88,118,0.5);
     background: #b7bbbb;
 }
 
 body.night .card {
+    box-shadow: 0 4px 6px 0 rgba(47,88,118,0.3);
     background: #d3d4d4;
     color: #000000;
 }
