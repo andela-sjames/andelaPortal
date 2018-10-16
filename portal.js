@@ -7,4 +7,6 @@
             document.body.classList.remove('night');
        }
     }
+
+    // TODO: store the state of the toggle
 })();
