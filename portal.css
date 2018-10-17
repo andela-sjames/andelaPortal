@@ -79,7 +79,6 @@ img {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
     transition: 0.3s;
-    padding: 2px 16px;
     border-radius: 3px;
     color: #2f5876;
     height: 30px;
@@ -89,6 +88,13 @@ img {
     align-items: center;
     cursor: pointer;
     width: 100%;
+}
+
+.card a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 7px;
 }
 
 /* On mouse-over, add a deeper shadow */
