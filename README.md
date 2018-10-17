@@ -1,2 +1,4 @@
 # andelaPortal
-A chrome extension for https://portal.andela.com/ ( A list of Andela resources)
+A chrome and firefox extension for https://portal.andela.com/ ( A list of Andela resources)
+> *PS* Allocations do not work on Firefox
+ 

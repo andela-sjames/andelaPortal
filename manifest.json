@@ -9,8 +9,13 @@
       "default_icon": "images/19-andela-logo.png",
       "default_popup": "portal.html"
       },
+
+    "content_scripts": [
+    {
+      "matches": ["*://*.portal.andela/*"],
+      "js": ["portal.js"]
+    }
+  ],
     "permissions": ["activeTab"],
     "content_security_policy": "default-src 'self'; img-src 'self'; style-src https://fonts.googleapis.com; font-src https://fonts.gstatic.com https://fonts.googleapis.com; script-src 'self';"
   }
-
-
