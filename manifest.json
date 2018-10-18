@@ -3,7 +3,7 @@
 
     "name": "andelaPortals",
     "description": "Extension for quick navigation of andela resources.",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": { "128": "images/128-andela-logo.png" },
     "browser_action": {
       "default_icon": "images/19-andela-logo.png",

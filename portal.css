@@ -38,6 +38,15 @@ body.night .card {
     color: #000000;
 }
 
+body.night h1 {
+    /* font-family: 'Menlo', monospace; */
+    color: #d3d4d4;
+}
+
+body.night .version {
+    color: #d3d4d4;
+}
+
 a:link,
 a:visited {
     color: #000000;
