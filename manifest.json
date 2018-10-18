@@ -3,7 +3,7 @@
 
     "name": "andelaPortals",
     "description": "Extension for quick navigation of andela resources.",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": { "128": "images/128-andela-logo.png" },
     "browser_action": {
       "default_icon": "images/19-andela-logo.png",
@@ -16,6 +16,10 @@
       "js": ["portal.js"]
     }
   ],
-    "permissions": ["activeTab"],
-    "content_security_policy": "default-src 'self'; img-src 'self'; style-src https://fonts.googleapis.com; font-src https://fonts.gstatic.com https://fonts.googleapis.com; script-src 'self';"
-  }
+  "permissions": ["activeTab", "identity"],
+  "oauth2": {
+    "client_id": "92501942577-s87lav9b0hak2groa0tmpgg0e8tehfra.apps.googleusercontent.com",
+    "scopes": ["email"]   
+  },   
+  "content_security_policy": "default-src 'self'; img-src 'self'; style-src https://fonts.googleapis.com; font-src https://fonts.gstatic.com https://fonts.googleapis.com; script-src 'self'; connect-src https://www.googleapis.com/;"
+}
