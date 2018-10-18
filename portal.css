@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Exo', 'Open Sans', sans-serif;
     font-size: 12px;
@@ -61,6 +60,15 @@ a:visited {
     vertical-align: text-bottom;
     height: 40px;
     width: 40px;
+}
+
+.logo-overlay {
+   margin: 125px
+}
+
+#icon-overlay {
+    width: 100%;
+    margin-top: -38px;
 }
 
 h1 {
@@ -146,17 +154,17 @@ img {
     display: inline-block;
     width: 50px;
     height: 27px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+/* Hide default HTML checkbox */
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+/* The slider */
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -166,9 +174,9 @@ img {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 16px;
@@ -178,40 +186,42 @@ img {
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked + .slider {
     background-color: #2f5876;
     border: 2px solid #fff;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus + .slider {
     box-shadow: 0 0 1px #2f5876;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+/* Rounded sliders */
+.slider.round {
     border-radius: 45px;
-  }
+}
   
-  .slider.round:before {
+.slider.round:before {
     border-radius: 50%;
-  }
+}
 
 #login{
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
     position: absolute;
-    top: 50%;
     left: 50%;
-    font-size: 50px;
-    color: 2f5876;
+    font-size: 41px;
+    color: #3359DF;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+    border-radius: 20px;
+    background-color: white!important;
 }
 
 #overlay {
@@ -223,9 +233,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    /* background-color: rgba(1, 1, 29, 0.959); */
     background-color: #fff;
-    background-image: url("images/150-andela-log.png");
     z-index: 2;
     cursor: pointer;
 }
