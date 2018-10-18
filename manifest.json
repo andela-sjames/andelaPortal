@@ -12,7 +12,6 @@
   "icons": {
      "128": "images/128-andela-logo.png"
   },
-  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqOtATtjin330pRcPoEb+MamlIPNn/b6qPpgKTu5k+JwALUXrYue/Fprl2tt7VmH1DXxz+AYy/p/jy0RpU8BWXpiFHCEX9/yB870Z7Ar7UzUEAzYr5RKBCqJrL5s9LM9eE4kb+mnTYDHTOf9pUJ+Dl4B09UH875EdmEnC4X3yqAWUUDf3zk2/HrbR3BX5TgSinyW6dFgrxSENp5GPLAPtgxF4rtDKh1sofxaEIzOn99jX8JBb36frjtEHtwe/fVB6Xrfv7/TgO1fdAJFxSc9I0fCi1+cGiOOGjJkl3+qpUJ01HbVbhBPdvtGgBUrzpNqiF4o+YT09FgnOvDZj5/reHQIDAQAB",
   "manifest_version": 2,
   "name": "andelaPortals",
   "permissions": [ "activeTab", "identity" ],
