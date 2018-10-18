@@ -7,7 +7,7 @@
     document.onreadystatechange = function () {
         if (document.readyState === "complete") {
             retainToggleState();
-            // checkStatus();
+            checkStatus();
         }
     }
 
