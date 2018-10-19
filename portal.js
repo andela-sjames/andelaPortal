@@ -60,6 +60,7 @@
                 if (data.hd !== "andela.com") {
                     localStorage.setItem("andelaPortalStatus", false);
                     alert("wrong Gsuite account")
+                    return;
                 } else{
                     localStorage.setItem("andelaPortalStatus", true);
                     document.getElementById("overlay").style.display = "none";
