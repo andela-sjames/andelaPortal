@@ -1,18 +1,12 @@
 (function() {
     document.getElementById("toggle").addEventListener('change', handleChange);
     document.getElementById("login").addEventListener('click', checkStatus);
-    chrome.identity.onSignInChanged.addListener(UnsetStorage);
-
 
     document.onreadystatechange = function () {
         if (document.readyState === "complete") {
             retainToggleState();
             checkStatus();
         }
-    }
-
-    function UnsetStorage() {
-        localStorage.setItem("andelaPortalStatus", false);
     }
 
     function handleChange(e) {
