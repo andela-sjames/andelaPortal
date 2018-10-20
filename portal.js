@@ -1,6 +1,6 @@
 (function() {
     document.getElementById("toggle").addEventListener('change', handleChange);
-    document.getElementById("login").addEventListener('click', checkStatus);
+    document.getElementById("login").addEventListener('click', authenticate);
 
     document.onreadystatechange = function () {
         if (document.readyState === "complete") {
@@ -29,14 +29,32 @@
     }
 
     function checkStatus() {
-        if (localStorage.getItem("andelaPortalStatus") === "true" ) {
+        var currentDate = new Date();
+        var expireObject = JSON.parse(localStorage.getItem('expireObject'));
+
+        try {
+            // if it throws an error then this is a new user. 
+            var expirationDate = expireObject.expiresAt;
+        } catch(err) {
+            authenticate();
+        }
+
+        if (Date.parse(currentDate) < Date.parse(expirationDate)) {
             document.getElementById("overlay").style.display = "none";
         } else {
-            authenticate();
+            // show Sign-In overlay if the time has expired. 
+            document.getElementById("overlay").style.display = "block";
         }
     }
 
     function authenticate() {
+        var expirationDate = new Date();
+        expirationDate.setDate(expirationDate.getDate() + 3); // expire after 3 days.
+
+        var expireObject = {
+            "expiresAt": expirationDate,
+        }
+
         chrome.identity.getAuthToken({interactive: true}, function(token) {
             if (chrome.runtime.lastError) {
                 alert(chrome.runtime.lastError.message);
@@ -52,11 +70,10 @@
             .then((response) => response.json())
             .then(function(data) {
                 if (data.hd !== "andela.com") {
-                    localStorage.setItem("andelaPortalStatus", false);
                     alert("wrong Gsuite account")
                     return;
                 } else{
-                    localStorage.setItem("andelaPortalStatus", true);
+                    localStorage.setItem('expireObject', JSON.stringify(expireObject));
                     document.getElementById("overlay").style.display = "none";
                 }
             })
