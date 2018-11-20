@@ -1,179 +1,57 @@
-<!doctype <!DOCTYPE html>
+<!doctype>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Andela Portal Quick launcher</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="portal.css" />
-    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
-</head>
-<body class="">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Andela Portal Quick launcher</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="portal.css" />
+    </head>
 
-    <!-- Overlay for authentication -->
-    <div id="overlay">
-        <div class="logo-overlay">
-            <img id="icon-overlay" src="images/150-andela-log.png" />
-        </div>
-        <button id="login">Sign In</div>
-    </div>
+    <body class="container">
 
-    <div class="modal-header">
-        <img class="logo-icon" src="images/150-andela-log.png" />
-        <h1 class="logo">
-            Andela Portal launcher
-            <span class="version">(1.2.1)</span>
-        </h1>
-    </div>
-    <div class="modal-content">
-        <p>Easily Access Andela resources</p> 
+        <!-- Overlay for authentication -->
+        <div id="overlay">
+            <div class="authentication">
+                <div class="logo-overlay">
+                    <img id="icon-overlay" src="images/andela-logo-150.png" />
+                </div>
+                <button id="login">Sign in with Google</button>
+            </div>
+        </div>
 
-        <!-- Rounded switch -->
-        <label class="switch">
-            <input type="checkbox" id="toggle">
-            <span class="slider round"></span>
-        </label>
-        
-    </div>
-    <div class="divider"></div>
-    <br>
-    <!-- Andela internal resources -->
-    <div class="grid-container">
-        <div class="card">
-            <a href="https://www.andela.com/" target="_blank">
-                Andela
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://pulse.andela.com/" target="_blank">
-                Pulse
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://allocations.andela.com/" target="_blank">
-                Allocations
-            </a>
-        </div>
-        <div class="card">
-            <a href="http://ais.andela.com/" target="_blank">
-                AIS
-            </a>
-        </div>
-        <div class="card">
-            <a href="http://help.andela.com/" target="_blank">
-                Helpdesk
-            </a>
-        </div>
-        <div class="card">
-            <a href="http://vof.andela.com/" target="_blank">
-                VOF
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://lv.andela.com" target="_blank">
-                LV
-            </a>
-        </div>
-        <div class="card">
-            <a href="http://zhishi.andela.com/dashboard" target="_blank">
-                Zhishi
-            </a>
-        </div>
-        <div class="card">
-            <a href="http://lenken.andela.com" target="_blank">
-                Lenken
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://learning-digest.andela.com" target="_blank">
-                Digest
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://framework.andela.com/" target="_blank">
-                Framework
-            </a>
-        </div>
-    </div>
-    <br>
+        <div id="app">
+            <div class="about">
+                <div>
+                    <div class="description">
+                        <img class="logo-icon" src="images/andela-logo-150.png" />
+                        <h1>Portal Launcher <span class="version">(2.0.0)</span></h1>
 
-    <div class="divider"></div>
-    <br>
+                        <div>
+                            <label class="switch">
+                                <input type="checkbox" id="toggle" title="Night Mode">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Andela external resources -->
-    <div class="grid-container">
-        <div class="card">
-            <a href="https://sites.google.com/andela.com/home" target="_blank">
-                (S)Intranet
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://andela.bamboohr.com/" target="_blank">
-                Bamboohr
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://andela.instructure.com" target="_blank">
-                Canvas
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://twitter.com/andela" target="_blank">
-                Twitter
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://andela.letsfreckle.com" target="_blank">
-                Freckle
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://github.com/andela/" target="_blank">
-                Github
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://app.greenhouse.io/dashboard" target="_blank">
-                Greenhouse
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://andela.grovo.com" target="_blank">
-                Grovo
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://andela.mybalsamiq.com/" target="_blank">
-                Balsamiq
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://www.pivotaltracker.com/dashboard" target="_blank">
-                Pivotal
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://www.pluralsight.com/" target="_blank">
-                Pluralsight
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://andela.small-improvements.com/app/home" target="_blank">
-                SI
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://sites.google.com/andela.com/learning" target="_blank">
-                (L)Intranet
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://medium.com/the-Andela-way" target="_blank">
-                Medium
-            </a>
-        </div>
-    </div>
-    <br>
+            <div class="divider"></div>
 
-    <script src="portal.js"></script>
-</body>
+            <div class="resources">
+                <!-- internal resources -->
+                <div id="internal-resources"></div>
+                <div class="divider"></div>
+                <!-- external resources -->
+                <div id="external-resources"></div>
+            </div>
+
+        </div>
+        <div id="alert"></div>
+
+        <script src="src/data.js"></script>
+        <script src="src/storage.js"></script>
+        <script src="portal.js"></script>
+    </body>
 </html>

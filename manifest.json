@@ -1,6 +1,6 @@
 {
   "browser_action": {
-     "default_icon": "images/19-andela-logo.png",
+     "default_icon": "images/andela-logo-19.png",
      "default_popup": "portal.html"
   },
   "content_scripts": [ {
@@ -10,15 +10,15 @@
   "content_security_policy": "default-src 'self'; img-src 'self'; style-src https://fonts.googleapis.com; font-src https://fonts.gstatic.com https://fonts.googleapis.com; script-src 'self'; connect-src https://www.googleapis.com/;",
   "description": "Extension for quick navigation of andela resources.",
   "icons": {
-     "128": "images/128-andela-logo.png"
+     "128": "images/andela-logo-128.png"
   },
   "manifest_version": 2,
   "name": "andelaPortals",
   "permissions": [ "activeTab", "identity" ],
   "oauth2": {
     "client_id": "92501942577-fkcs3tpar7l3mpk209n07h9lj5l55udf.apps.googleusercontent.com",
-    "scopes": ["email"]   
+    "scopes": ["email"]
   },
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "version": "1.2.1"
+  "version": "2.0.0"
 }
