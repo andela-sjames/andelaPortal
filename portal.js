@@ -16,11 +16,7 @@
     document.onreadystatechange = function () {
         if (document.readyState === "complete") {
             retainToggleState();
-            // checkStatus();
-            toggleDOMVisibility({
-                auth: "none",
-                app: "block"
-            });
+            checkStatus();
         }
     }
 
