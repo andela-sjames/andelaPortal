@@ -5,6 +5,7 @@
     var _authOverlay_ = document.getElementById("overlay");
     var _app_ = document.getElementById("app");
     var _alert_ = document.getElementById("alert");
+    var _class_ = document.body.classList;
     var _resources_ = {
         internal: document.getElementById("internal-resources"),
         external: document.getElementById("external-resources")
@@ -21,10 +22,10 @@
 
     function retainToggleState() {
         if (storage.get("nightMode")) {
-            document.body.classList.add("night");
-            document.getElementById("toggle").checked = true;
+            _class_.add("night");
+            _toggle_.checked = true;
         } else {
-            document.body.classList.remove("night");
+            _class_.remove("night");
         }
     }
 
@@ -97,12 +98,12 @@
     _toggle_.addEventListener("change", handleChange);
     _login_.addEventListener("click", authenticate);
 
-    function handleChange(e) {
-       if (document.getElementById("toggle").checked) {
-            document.body.classList.add("night");
+    function handleChange() {
+       if (_toggle_.checked) {
+            _class_.add("night");
             storage.set("nightMode", true);
        } else {
-            document.body.classList.remove("night");
+            _class_.remove("night");
             storage.set("nightMode", false);
        }
     }
@@ -134,6 +135,7 @@
                         return handleError("GSuite Account not Supported");
                     } else {
                         storage.set("expireObject", expireObject);
+                        populateDOM();
                         toggleDOMVisibility({
                             auth: "none",
                             app: "block"
