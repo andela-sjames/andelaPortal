@@ -86,7 +86,7 @@ body.night .version { color: #d3d4d4; }
     display: inline-block;
 }
 
-.logo-overlay { margin-right: 20px; }
+.logo-overlay {margin-right: 20px;}
 
 #icon-overlay {
     width: 60px;
@@ -124,7 +124,12 @@ img { width: 30px; }
     width: 100%;
 }
 
-.card a { text-align: center; }
+.card a {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 8px;
+}
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {

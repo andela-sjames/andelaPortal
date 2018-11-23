@@ -11,7 +11,6 @@
     };
 
     _alert_.style.display = "none";
-    populateDOM();
 
     document.onreadystatechange = function () {
         if (document.readyState === "complete") {
@@ -41,6 +40,7 @@
         }
 
         if (Date.parse(currentDate) < Date.parse(expirationDate)) {
+            populateDOM();
             toggleDOMVisibility({
                 auth: "none",
                 app: "block"
@@ -68,14 +68,14 @@
             stack.map(function(obj, index) {
                 return (
                     '<div class="card">' +
-                      '<a href="' + obj.link  + '" target="_blank">' +
-                        obj.title +
-                      '</a>' +
+                        '<a href="' + obj.link  + '" target="_blank">' +
+                            obj.title +
+                        '</a>' +
                     '</div>'
                 )
             }).join('') +
             '</div>'
-        )
+        );
     }
 
     function toggleDOMVisibility(options) {
