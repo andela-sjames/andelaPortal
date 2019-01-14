@@ -106,5 +106,9 @@ var RESOURCES = {
             "title": "Facebook",
             "link": "https://www.facebook.com/thisisandela"
         },
+        {
+            "title": "Curriculum",
+            "link": "https://sites.google.com/andela.com/andela-curriculum/home"
+        }
     ]
 };
