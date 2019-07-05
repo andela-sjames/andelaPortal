@@ -44,6 +44,26 @@ var RESOURCES = {
             "title": "Framework",
             "link": "https://framework.andela.com/"
         },
+        {
+            "title": "Activo",
+            "link": "https://activo.andela.com/"
+        },
+        {
+            "title": "Travela",
+            "link": "https://travela.andela.com/"
+        },
+        {
+            "title": "WatchTower",
+            "link": "https://watchtower.andela.com/"
+        },
+        {
+            "title": "Converge",
+            "link": "https://converge.andela.com/"
+        },
+        {
+            "title": "Tembea",
+            "link": "https://tembea.andela.com/"
+        }
     ],
     "external": [
         {
